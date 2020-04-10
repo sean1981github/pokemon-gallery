@@ -1,2 +1,122 @@
+.root {
+  margin: 0 auto;
+}
 .App {
+  text-align: center;
+}
+
+.pokecard {
+  display: grid;
+  grid-template-areas:
+    "id id"
+    "name name"
+    "element-area element-area"
+    "base-area base-area";
+
+  border: 1px solid black;
+  margin: 16px;
+  padding: 16px;
+  grid-gap: 20px;
+  border-radius: 20px;
+  background-color: lightcyan;
+  justify-content: center;
+  max-width: 20em;
+}
+
+img {
+  width: auto;
+  height: 150px;
+  /* height: auto; */
+}
+
+.id {
+  grid-area: id;
+  max-width: 80%;
+  justify-self: center;
+}
+
+.name {
+  grid-area: name;
+  font-size: 2em;
+  text-align: center;
+}
+
+.element-area {
+  grid-area: element-area;
+  display: flex;
+  justify-content: center;
+
+  grid-gap: 20px;
+}
+
+.element {
+  grid-area: element;
+
+  border: 2px solid black;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.base-area {
+  grid-area: base-area;
+  display: grid;
+  grid-template-areas:
+    "HP HP"
+    "Attack Defence"
+    "SpAttack SpDefence"
+    "Speed Speed";
+
+  border: 2px solid black;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 16px;
+  grid-gap: 16px;
+  border-radius: 20px;
+  min-width: 15em;
+  background-color: lavender;
+}
+
+.hp {
+  grid-area: HP;
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: lightcyan;
+}
+
+.attack {
+  grid-area: Attack;
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: lightcyan;
+}
+
+.defence {
+  grid-area: Defence;
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: lightcyan;
+}
+.sp-attack {
+  grid-area: SpAttack;
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: lightcyan;
+}
+.sp-defence {
+  grid-area: SpDefence;
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: lightcyan;
+}
+.speed {
+  grid-area: Speed;
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: lightcyan;
 }
