@@ -1,10 +1,11 @@
 import React from "react";
-import pokemonData from "../pokemon/pokemon";
 import PokemonCard from "../component/PokemonCard";
 
-const POKEMONCARDALL = function PokemonCardAll() {
-  return pokemonData.map((pokemonSelected, i) => {
+const PokemonGallery = ({ pokemons }) => {
+  console.log("I'm at pokemongallery");
+  return pokemons.map((pokemonSelected) => {
     return <PokemonCard pokemon={pokemonSelected} />;
   });
 };
-export default POKEMONCARDALL;
+
+export default PokemonGallery;

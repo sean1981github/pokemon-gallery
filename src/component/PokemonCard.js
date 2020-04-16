@@ -25,7 +25,7 @@ function elementBackgroundColorSelector(element) {
     });
 }
 
-const POKEMONCARD = function PokemonCard({ pokemon }) {
+const PokemonCard = function PokemonCard({ pokemon }) {
   const { id, name, type, base } = pokemon;
 
   return (
@@ -59,4 +59,4 @@ const POKEMONCARD = function PokemonCard({ pokemon }) {
   );
 };
 
-export default POKEMONCARD;
+export default PokemonCard;
